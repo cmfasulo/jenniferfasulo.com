@@ -1,165 +1,46 @@
-html {
-  /*background: url('../images/Grunge-Parchment-Paper-Texture.jpg') no-repeat center center fixed;
+body {
+  background: url('../images/law_books.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
-}
-
-body {
-	background: none;
-	height: 100vh;
-}
-
-nav .navbar-default {
-	background-image: linear-gradient(to bottom,#e7e7e7 0,#5d5d5d 100%);
-}
-
-img {
-	width: 100%;
-	height: auto;
-	border-radius: 50%;
-	border: 5px white solid;
-	/*border-radius: 2% 30% 2%;*/
-}
-
-table {
-	width: 100%;
-	height: 100%;
-	margin: 7% auto 8% auto;
-	text-align: center;
-}
-
-tr {
-	width: 100%;
-	height: 100%;
+  background-size: cover;
+  background-color: rgba(94, 73, 122, 0.75);
+  margin: 0;
 }
 
 h1, h4 {
 	color: white;
-	text-shadow: 1px 1px #696969;
+  text-shadow: 2px 2px #53354A;
 }
 
 h1 {
 	font-size: 80px;
-	font-variant: small-caps;
-  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
 	margin-bottom: 50px;
-  font-family: 'Cabin Sketch', cursive;
-  margin-top: 0;
+  /*font-family: 'Marck Script', cursive;*/
+  font-family: 'Petit Formal Script', cursive;
+  /*font-family: 'Redressed', cursive;*/
+  /*font-family: 'Bilbo', cursive;*/
+  /*font-family: 'Annie Use Your Telescope', cursive;*/
+
 }
 
 h4 {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Lato', sans-serif;
   line-height: normal;
-}
-
-h5 {
-	color: #777;
 }
 
 li {
 	margin: 5px 0;
-	text-shadow: 1px 1px #696969;
+	/*text-shadow: 1px 1px #696969;*/
 }
 
 span {
 	font-size: 16px;
-	text-shadow: 1px 1px #696969;
-  font-style: italic;
-	/*font-variant: small-caps;*/
 }
 
-.mainCell a {
-	color: white;
-	text-shadow: 1px 1px #696969;
-	text-decoration: none;
-	font-size: 36px;
-	font-variant: small-caps;
-	font-family: 'Cabin Sketch', cursive;
-  font-weight: bold;
-	border: 2px solid white;
-	border-radius: 5% 20% 5%;
-	padding: 10px 20px;
-  /*box-shadow: 5px 5px 5px #a2a2a2;*/
-}
-
-.mainCell a:hover {
-  color: #ad976c;
-	border: 2px solid #ad976c;
-  cursor:pointer;
-  /*box-shadow: 5px 5px 5px #fff;*/
-  /*-webkit-animation: pulsate 2s ease-out;
-  -webkit-animation-iteration-count: infinite;*/
-}
-
-.container-fluid {
-	padding: 0;
-}
-
-.navbar-nav {
-	float: right;
-}
-
-.navbar-collapse {
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.navbar-brand {
-  line-height: 30px;
-}
-
-.row {
-	display: block;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-.alignRight {
-	float: right;
-}
-
-.mainCell {
-	width: 33.33%;
-	float: left;
-}
-
-#content {
-	background: url('../images/Grunge-Parchment-Paper-Texture.jpg') no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	/*background-color: rgba(128, 128, 128, 0.3);*/
-	/*border: 5px solid #777;*/
-	margin-top: 10%;
-	margin-bottom: 10%;
-	box-shadow: 8px 8px 8px #a2a2a2;
-}
-
-#mepic {
-	display: inline-block;
-	max-width: 25%;
-	margin-left: 5%;
-	margin-right: 5%;
-}
-
-#about {
-	display: inline-block;
-	width: 600px;
-	text-align: left;
-}
-
-#mainCellRow {
-	width: 100%;
-	float: left;
-	clear: both;
-	margin: 10% auto 0 auto;
-}
-
-#footer {
+footer {
   display: flex;
   align-content: stretch;
   align-items: center;
@@ -168,13 +49,178 @@ span {
   height: 100px;
   bottom: 0;
   left: 0;
-	background-color: #e7e7e7;
+  color: white;
+	background-color: #53354A;
+  opacity: 1;
   /*background-color: rgba(255, 255, 255, 0.3);*/
   text-align: right;
 }
 
-@-webkit-keyframes pulsate {
+#background-filter {
+  background-color: rgba(94, 73, 122, 0.75);
+  padding: 50px 0 0 0;
+  /*height: 100%;*/
+}
+
+#content {
+	/*background-color: rgba(47, 65, 99, 0.9);*/
+	border: 5px solid #53354A;
+  margin: 5% 20%;
+	/*margin-top: 10%;
+	margin-bottom:10%;*/
+	box-shadow: 0px 0px 50px #6a6a6a;
+}
+
+#about-row, #button-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#jenn {
+  flex: 1 2 0;
+  width: 30%;
+	height: auto;
+	border-radius: 50%;
+	border: 5px solid #53354A;
+  margin: 0 3% 0 6%;
+	/*border-radius: 2% 30% 2%;*/
+}
+
+#about {
+  flex: 2 1 0;
+  margin: 0 6% 0 3%;
+}
+
+#button-row a {
+  color: #ffffff;
+  /*text-shadow: 1px 1px #ffffff;*/
+	text-decoration: none;
+	font-size: 36px;
+	font-family: 'Petit Formal Script', cursive;
+	border: 2px solid #ffffff;
+	border-radius: 5% 20% 5%;
+	padding: 10px 20px;
+  margin: 30px 0;
+  /*box-shadow: 2px 2px 2px #53354A;*/
+}
+
+#button-row a:hover {
+  color: #53354A;
+	border: 2px solid #53354A;
+  cursor:pointer;
+  /*box-shadow: 5px 5px 5px #fff;*/
+  /*-webkit-animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: infinite;*/
+}
+
+/*@-webkit-keyframes pulsate {
     0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
     50% {opacity: 1.0;}
     100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}*/
+
+
+.navBar {
+  background-color: #53354A;
+  top: 0;
+  position: fixed;
+  min-width: 100%;
+}
+
+.logo {
+  background-color: #ffffff;
+  border-radius: 50px;
+  display: inline-block;
+  height: 60px;
+  margin: 1em 0;
+  width: 60px;
+  text-align: center;
+  display: table;
+}
+
+.logo a {
+  font-family: 'Petit Formal Script', cursive;
+  color: #53354A;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 2%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 50%;
+}
+nav ul a {
+  font-family: 'Petit Formal Script', cursive;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+nav ul a:hover {
+  color: #903749;
+  font-size: 1.75em;
+}
+nav li {
+  display: inline-block;
+}
+nav #menu-toggle {
+  display: none;
+}
+nav .label-toggle {
+  display: none;
+}
+nav .wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    background-color: #E84545;
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    text-align: center;
+    transition: all 1s ease;
+    width: 100%;
+    visibility: hidden;
+  }
+  nav li {
+    border-bottom: 2px solid #53354A;
+    color: #53354A;
+    display: block;
+    font-size: 1.5em;
+    padding: 2em 0;
+  }
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: 100vh;
+    visibility: visible;
+  }
+  nav .label-toggle {
+    background: linear-gradient(to bottom, #E84545 0%, #E84545 20%, transparent 20%, transparent 40%, #E84545 40%, #E84545 60%, transparent 60%, transparent 80%, #E84545 80%, #E84545 100%);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 35px;
+    margin-top: 1em;
+    width: 35px;
+  }
+  nav .wrapper {
+    display: block;
+  }
 }
