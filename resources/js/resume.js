@@ -1,18 +1,25 @@
 $(document).ready(function() {
+  $("#educationContent").hide()
   $("#experienceContent").hide()
   $("#keySkillsContent").hide()
-  $("#educationContent").hide()
+  $("#awardsContent").hide()
 
-    $("#experience").on("click", function(){
-      $("#experienceContent").slideToggle("slow")
-    });
 
-    $("#keySkills").on("click", function(){
-      $("#keySkillsContent").slideToggle("slow")
-    });
+  $("#education").on("click", function(){
+    $("#educationContent").slideToggle("slow")
+  });
 
-    $("#education").on("click", function(){
-      $("#educationContent").slideToggle("slow")
-    });
+  $("#experience").on("click", function(){
+    $("#experienceContent").slideToggle("slow")
+  });
+
+  $("#keySkills").on("click", function(){
+    $("#keySkillsContent").slideToggle("slow")
+  });
+
+  $("#awards").on("click", function(){
+    $("#awardsContent").slideToggle("slow")
+  });
+
 
 });
